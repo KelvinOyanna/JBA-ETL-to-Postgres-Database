@@ -14,12 +14,10 @@ with open('cru-ts-2-10.1991-2000-cutdown.pre', 'r') as raw_file:
             ref.append([xref, yref])
         elif re.search(r'([0-9]+ +)+[0-9]+' , line_data):
             row_data = re.search(r'([0-9]+ +)+[0-9]+' , line_data).group()
-            #month_data.append(row_data)
-            print(row_data)
-
-            #print(ref_data) [0-9]+ [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9]  +[0-9]
+            month_data.append(row_data)
+            #print(row_data)
       
-    #print(month_data[0])
+    print(month_data[6])
     #print(ref)
 
 
